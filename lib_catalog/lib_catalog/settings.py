@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'lib_catalog.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "django",
-        "USER": "django",
-        "PASSWORD": "django",
+        'NAME': os.environ.get('POSTGRES_NAME'),
+        'USER': os.environ.get('POSTGRES_USER'),
+        'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
         "HOST": "database",
         "PORT": "5432",
         "CONN_MAX_AGE": None

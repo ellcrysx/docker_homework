@@ -159,3 +159,6 @@ _ReSharper*/
 .vs/
 #Nuget packages folder
 packages/
+
+.DS_Store
+data/
